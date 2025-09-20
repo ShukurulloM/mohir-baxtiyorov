@@ -162,6 +162,88 @@ h1 {
 }
 
 .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(106, 17, 203, 0.6);
+    background: linear-gradient(to right, #2575fc 0%, #6a11cb 100%);
+}
+
+.btn:active {
+    transform: translateY(1px);
+    box-shadow: 0 3px 10px rgba(106, 17, 203, 0.4);
+}
+
+/* Nurlanish effekti */
+.btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(0, 0);
+    border-radius: 50%;
+    opacity: 0;
+    transition: transform 0.8s, opacity 0.8s;
+}
+
+.btn:hover::after {
+    transform: scale(1.5, 1.5);
+    opacity: 0;
+}
+
+/* Yorqinlik effekti */
+.btn::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.1);
+    transform: rotate(45deg);
+    transition: all 0.6s ease;
+    opacity: 0;
+}
+
+.btn:hover::before {
+    opacity: 1;
+    animation: shine 1.5s infinite;
+}
+
+@keyframes shine {
+    0% {
+        left: -50%;
+    }
+    100% {
+        left: 150%;
+    }
+}
+
+/* Pulsatsiya effekti */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(106, 17, 203, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 15px rgba(106, 17, 203, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(106, 17, 203, 0);
+    }
+}
+
+.btn.pulse {
+    animation: pulse 2s infinite;
+}
+
+.instruction {
+    margin-top: 2rem;
+    color: #555;
+    font-size: 16px;
+}
+
+.btn:hover {
     background: #2575fc;
     transform: translateY(-3px);
 }
