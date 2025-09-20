@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohir Baxtiyorov - Marketing Mutaxassisi va Tadbirkor</title>
+    <!-- SEO -->
+    <meta name="description"
+        content="Mohir Baxtiyorov — marketing, brend va shaxsiy rivojlanish bo'yicha mutaxassis. 30+ loyiha, konsultatsiya va Instagramda biznes-sovg'alar.">
+    <meta name="keywords" content="marketing, reklama, biznes, shaxsiy rivojlanish, brend, SMM, SEO, Mohir Baxtiyorov">
+    <meta name="author" content="Mohir Baxtiyorov">
+
+    <!-- Open Graph (Facebook, Instagram, Telegram preview) -->
+    <meta property="og:title" content="Mohir Baxtiyorov - Marketing Mutaxassisi">
+    <meta property="og:description" content="Biznesingiz uchun marketing va rivojlanish bo‘yicha tajribali mutaxassis.">
+    <meta property="og:image" content="https://yourdomain.com/img/brat.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomain.com">
+
+    <!-- Icon -->
+    <link rel="icon" type="image/svg+xml" href="./img/Icon.png">
+
+    <!-- Fonts & Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <i class="fas fa-chart-line"></i>
+                Mohir Baxtiyorov
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-container">
+            <img class="profile-img" src="./img/brat.jpg" alt="Mohir Baxtiyorov">
+            <h1>Marketing va Shaxsiy <span class="highlight">Rivojlanish</span></h1>
+            <p class="hero-text">Marketing bo‘yicha 3 yillik tajriba. 30 dan ortiq loyihalar. Brend, marketing va
+                shaxsiy
+                rivojlanish bo‘yicha bilimlaringizni oshiring.</p>
+            <button class="btn" onclick="showForm()">Bog‘lanish</button>
+        </div>
+
+        <!-- Forma -->
+        <div id="overlay" onclick="closeForm(event)">
+            <div id="contactForm" onclick="event.stopPropagation()">
+                <button class="closeBtn" onclick="closeForm(event)">✖</button>
+                <h2>Bog‘lanish uchun ma’lumotlaringizni qoldiring</h2>
+                <form>
+                    <input class="first-name" type="text" placeholder="Ism" required>
+                    <input class="phone" type="tel" placeholder="Telefon raqam"
+                        pattern="[\- ]?\d{2}[\- ]?\d{3}[\- ]?\d{2}[\- ]?\d{2}" required>
+                    <button type="submit">Yuborish</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2>Nima uchun bizni tanlashadi?</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Zamonaviy Marketing</h3>
+                    <p>Oxirgi trend va innovatsion strategiyalar asosida ishlaymiz.</p>
+                </div>
+
+                <div class="feature">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Kafolatlangan Natijalar</h3>
+                    <p>30+ muvaffaqiyatli loyiha tajribasi — bu bizning kafolatimiz.</p>
+                </div>
+
+                <div class="feature">
+                    <i class="fas fa-user-tie"></i>
+                    <h3>Mutaxassis Yondashuvi</h3>
+                    <p>Har bir mijoz uchun individual strategiya ishlab chiqamiz.</p>
+                </div>
+
+                <div class="feature">
+                    <i class="fas fa-award"></i>
+                    <h3>Isbotlangan Tajriba</h3>
+                    <p>Real Business va PCG kabi yirik kompaniyalar bilan ishlaganmiz.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Biz Haqimizda</h3>
+                <p>Biz marketing sohasida 3 yillik tajribaga ega kompaniyamiz. Mijozlarimizga sifatli va samarali
+                    marketing xizmatlarini taqdim etamiz.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/mohir.baxtiyorov.2025/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/mohir_baxtiyorov/"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Xizmatlarimiz</h3>
+                <ul class="footer-links">
+                    <li><a href="#">SEO Optimallashtirish</a></li>
+                    <li><a href="#">SMM Marketing</a></li>
+                    <li><a href="#">Kontent Marketing</a></li>
+                    <li><a href="#">Email Marketing</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Bog'lanish</h3>
+                <ul class="contact-info">
+                    <li><i class="fas fa-map-marker-alt"></i> Toshkent sh., Yunusobod tumani</li>
+                    <li>
+                        <i class="fas fa-phone"></i>
+                        <a class="telefon" href="tel:+998931353366">93-135-33-66</a>
+                    </li>
+                    <li>
+                        <i class="fab fa-instagram"></i>
+                        <a class="instagram" href="https://www.instagram.com/mohir_baxtiyorov/"
+                            target="_blank">@mohir_baxtiyorov</a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Yangiliklar</h3>
+                <p>Yangi marketing strategiyalarimiz haqida xabardor bo'lish uchun obuna bo'ling</p>
+
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2023 Marketolog.uz - Barcha huquqlar himoyalangan</p>
+        </div>
+    </footer>
+    <script src="./app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+
+</html>
