@@ -309,8 +309,6 @@ h1 {
     }
 }
 
-
-
 .btn:hover {
     background: #2575fc;
     transform: translateY(-3px);
@@ -555,6 +553,9 @@ h1 {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     margin-top: 30px;
     font-size: 0.9rem;
+}
+.text{
+    font-size: 18px;
 }
 
 .newsletter-form {
